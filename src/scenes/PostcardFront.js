@@ -25,6 +25,7 @@ class PostcardFront extends Phaser.Scene {
 
              })
             placeholder1Emitter.explode(100)
+            this.sound.play('placeholdersfx')
             this.placeholder1Letter = true
         })
 
@@ -46,6 +47,7 @@ class PostcardFront extends Phaser.Scene {
 
              })
             placeholder2Emitter.explode(100)
+            this.sound.play('placeholdersfx')
             this.placeholder2Letter = true
         })
 
@@ -67,6 +69,7 @@ class PostcardFront extends Phaser.Scene {
 
              })
             placeholder3Emitter.explode(100)
+            this.sound.play('placeholdersfx')
             this.placeholder3Letter = true
         })
 
