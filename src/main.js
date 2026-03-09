@@ -12,9 +12,7 @@ let config = {
     type: Phaser.WEBGL,
     height: 640,
     width: 960,
-    scale: {
-        autoCenter: Phaser.Scale.CENTER_BOTH
-    },
+    
     scene: [ Load, Title, PostcardFront, PostcardBack, Credits]
 }
 let game = new Phaser.Game(config);

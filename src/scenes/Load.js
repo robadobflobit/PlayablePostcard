@@ -19,6 +19,7 @@ class Load extends Phaser.Scene {
         this.load.bitmapFont('beach', 'fonts/beach.png', 'fonts/beach.xml')
         this.load.image('bgplaceholder', 'images/bgplaceholder.jpg')
         this.load.image('placeholder', 'images/placeholder1.png')
+        this.load.image('backplaceholder', 'images/postcardplaceholder.jpeg')
 
     }
 
