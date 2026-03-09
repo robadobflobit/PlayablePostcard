@@ -9,7 +9,7 @@
 
 let config = {
     parent: 'myGame',
-    type: Phaser.AUTO,
+    type: Phaser.WEBGL,
     height: 640,
     width: 960,
     scale: {
@@ -18,7 +18,7 @@ let config = {
     scene: [ Load, Title, PostcardFront, PostcardBack, Credits]
 }
 let game = new Phaser.Game(config);
-let centerX = game.config.wdith/2
+let centerX = game.config.width/2
 let centerY = game.config.height/2
 let w = game.config.width
 let h = game.config.height
