@@ -24,9 +24,5 @@ class PostcardBack extends Phaser.Scene {
         if (Phaser.Input.Keyboard.JustDown(this.return)) {
             this.scene.start('titleScene')
         }
-
-        if (this.placeholder1Letter === true) {
-            this.add.bitmapText(centerX-textSpacer*5, centerY - textSpacer+25, 'beach', 'Work', 48).setOrigin(0.5).setTint(0x000000)
-        }
     }
 }
