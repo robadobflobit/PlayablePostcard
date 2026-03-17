@@ -5,23 +5,22 @@ class Title extends Phaser.Scene {
 
     create() {
 
-        this.add.image(centerX, centerY, 'bgplaceholder').setOrigin(0.5).setScale(0.7)
+        this.sound.stopAll()
 
-        this.add.bitmapText(centerX, centerY - textSpacer, 'beach', 'Beach Day\n in\n Mar Del Plata', 64).setOrigin(0.5)
 
-        this.sound.play('placeholdermusic', { loop: true }, { volume: 0.5 })
+        this.add.image(centerX, centerY, 'postcardfront').setOrigin(0.5).setScale(1)
 
-        this.add.bitmapText(centerX, centerY + textSpacer*2, 'beach', 'Click Anywhere to Start!', 32).setOrigin(0.5)
+        this.add.bitmapText(centerX+30, centerY - textSpacer+20, 'beach', 'Beach Day\n in\n Mar Del Plata', 64).setOrigin(0.5)
 
-        document.getElementById('description').innerHTML = 'Find and Click Hidden Letters to Send Them to the Back and Complete the Message<br>F: Flip Postcard<br>R: Return to Title'
+        this.sound.play('beachmusic', { loop: true }, { volume: 0.5 })
+
+        this.add.bitmapText(centerX, centerY + textSpacer*4.5, 'beach', 'Click Anywhere to Start!', 32).setOrigin(0.5)
+
+        document.getElementById('description').innerHTML = 'Click Letters Hidden in the Scene to Send Them to the Back of the Postcard and Complete the Message<br>Hint: Look At Things That Stand Out<br>F: Flip Postcard<br>R: Return to Title<br>H: Hint (Shows Where the Letters Are)'
 
 
         this.input.on('pointerdown', (pointer) => {
             this.scene.start('postcardFrontScene')
         })
-
     }
-
-    
-    
 }

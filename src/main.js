@@ -1,9 +1,21 @@
-// Robert Lai
-// Playable Postcard (Title WIP)
-// ~ Hours spent
-// A playable postcard intended for my mother. Search the scene of a beach of Mar Del Plata,
-// Argentina to find hidden letters that complete the unfinished message on the back of the 
-// postcard. 
+//Robert Lai
+//Playable Postcard (Title WIP)
+//~25 Hours spent
+//A playable postcard intended for my mother. Search the scene of a beach of Mar Del Plata,
+//Argentina to find hidden letters that complete the unfinished message on the back of the 
+//postcard. 
+
+//Art by Robert Lai
+//Music: "Koopa Troopa Beach" by Hyper Potions - YT
+//SFX: "Twinkle - Sound Effect" by Sound Central - YT
+//Font: "Beach" by Font Meme
+
+//Uses particle effects, tweens, bitmap text objects, the data registry, and cursor keys
+
+//For creative tilt, I tried to be as literal as possible and make what is quite literally a playable postcard, rather
+//than making a game themed around a location like other games in this class seemed to be.
+
+
 
 'use strict'
 
